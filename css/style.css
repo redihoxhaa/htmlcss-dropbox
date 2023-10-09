@@ -58,8 +58,8 @@ header li:hover {
     padding-top: 2px;
 }
 
-.col-left,
-.col-right,
+nav .col-left,
+nav .col-right,
 .info-links ul,
 .support-links ul {
     gap: 42px;
@@ -85,12 +85,17 @@ nav .col-right {
     background-color: var(--light-blue);
 }
 
+.container-small {
+    width: 1200px;
+}
+
+.inside-jumbo .col-left
 /* #endregion COMMON*/
 
 /* #region HEADER*/
 
 header {
-    background-color: var(--sky);
+    background-color: red;
 }
 
 header nav {
@@ -103,8 +108,8 @@ header nav {
     left: 0;
     right: 0;
     z-index: 9999;
-
 }
+
 
 
 nav .col-right {
@@ -125,6 +130,17 @@ nav .col-right {
 .jumbotron {
     padding-top: 80px;
     height: 818px;
+    margin: 0 auto;
+    background-color: var(--sky);
+
+}
+
+.inside-jumbo .col-right {
+    position: relative;
+}
+
+.inside-jumbo .col-right img {
+    width: 90%;
 }
 
 /* #endregion HEADER*/
