@@ -132,8 +132,8 @@ nav .col-right {
 
 
 .jumbotron {
-    padding-top: 180px;
-    height: 837px;
+    padding-top: 158px;
+    height: 816px;
     margin: 0 auto;
     background-color: var(--sky);
 }
@@ -152,8 +152,8 @@ nav .col-right {
 }
 
 .inside-jumbo .col-left .fa-arrow-down {
-    padding-top: 41px;
-    font-size: 53px;
+    padding-top: 42px;
+    font-size: 48px;
 }
 
 
