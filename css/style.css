@@ -36,6 +36,10 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 /* #endregion TYPOGRAPHY*/
 
 /* #region COMMON*/
@@ -90,10 +94,15 @@ nav .col-right {
     background-color: var(--light-blue);
 }
 
-.container-small {
+.container-big {
     width: 1200px;
+    margin: 0 auto;
 }
 
+.container-small {
+    width: 1000px;
+    margin: 0 auto;
+}
 
 /* #endregion COMMON*/
 
@@ -134,7 +143,6 @@ nav .col-right {
 .jumbotron {
     padding-top: 158px;
     height: 816px;
-    margin: 0 auto;
     background-color: var(--sky);
 }
 
@@ -156,8 +164,6 @@ nav .col-right {
     font-size: 48px;
 }
 
-
-
 .inside-jumbo .col-right {
     width: 840px;
 }
@@ -174,8 +180,39 @@ nav .col-right {
 
 /* #region MAIN*/
 
+main .plans {
+    padding-top: 150px;
+}
+
+.select-plan {
+    gap: 40px;
+    font-size: 15px;
+    padding-top: 60px;
+}
+
 /* #endregion MAIN*/
 
 /* #region FOOTER*/
 
 /* #endregion FOOTER*/
+
+/* #region RADIO*/
+
+.yearly-plan .fa-circle,
+.monthly-plan .fa-circle-dot {
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+
+.yearly-plan .fa-circle {
+    color: var(--gray);
+
+}
+
+.monthly-plan .fa-circle-dot {
+    color: var(--blue);
+
+}
+
+/* #endregion RADIO*/
