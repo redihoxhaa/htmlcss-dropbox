@@ -6,17 +6,126 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
 /* #endregion RESET*/
 
 /* #region TYPOGRAPHY*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Tavolozza colori */
+:root {
+    --blue: #0061ff;
+    --light-blue: #1e73fc;
+    --sky: #b4d0e7;
+    --bordeaux: #61082b;
+    --gray: #999999;
+    --light-gray: #f5f5f5;
+}
+
+/* /Tavolozza colori */
+
 
 /* #endregion TYPOGRAPHY*/
 
 /* #region COMMON*/
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header li {
+    list-style: none;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header li:hover {
+    border-bottom: 2px solid black;
+    padding-top: 2px;
+}
+
+.col-left,
+.col-right,
+.info-links ul,
+.support-links ul {
+    gap: 42px;
+
+}
+
+nav .col-left,
+nav .col-right {
+    width: 50%;
+}
+
+.btn {
+    background-color: var(--blue);
+    color: white;
+    padding: 9px 17px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--light-blue);
+}
+
 /* #endregion COMMON*/
 
 /* #region HEADER*/
+
+header {
+    background-color: var(--sky);
+}
+
+header nav {
+    background-color: white;
+    padding: 0 20px;
+    height: 80px;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--light-gray);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+
+
+nav .col-right {
+    justify-content: flex-end;
+}
+
+
+.head-start-button {
+    margin-left: 25px;
+}
+
+.head-start-button:hover {
+    border: none !important;
+    padding-top: 0px;
+}
+
+
+.jumbotron {
+    padding-top: 80px;
+    height: 818px;
+}
 
 /* #endregion HEADER*/
 
