@@ -31,6 +31,11 @@ body {
 /* /Tavolozza colori */
 
 
+h1 {
+    font-size: 77px;
+    font-weight: 800;
+}
+
 /* #endregion TYPOGRAPHY*/
 
 /* #region COMMON*/
@@ -89,13 +94,13 @@ nav .col-right {
     width: 1200px;
 }
 
-.inside-jumbo .col-left
+
 /* #endregion COMMON*/
 
 /* #region HEADER*/
 
 header {
-    background-color: red;
+    background-color: var(--sky);
 }
 
 header nav {
@@ -109,7 +114,6 @@ header nav {
     right: 0;
     z-index: 9999;
 }
-
 
 
 nav .col-right {
@@ -128,19 +132,42 @@ nav .col-right {
 
 
 .jumbotron {
-    padding-top: 80px;
-    height: 818px;
+    padding-top: 180px;
+    height: 837px;
     margin: 0 auto;
     background-color: var(--sky);
+}
+
+.inside-jumbo {
+    align-items: flex-start;
+    padding-top: 49px;
+}
+
+.inside-jumbo .col-left {
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
 
 }
 
+.inside-jumbo .col-left .fa-arrow-down {
+    padding-top: 41px;
+    font-size: 53px;
+}
+
+
+
 .inside-jumbo .col-right {
-    position: relative;
+    width: 840px;
 }
 
 .inside-jumbo .col-right img {
-    width: 90%;
+    width: 100%;
+}
+
+.btn.trial {
+    padding: 11px 17px;
 }
 
 /* #endregion HEADER*/
