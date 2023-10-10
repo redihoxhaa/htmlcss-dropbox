@@ -19,7 +19,6 @@ a {
     color: var(--blue);
 }
 
-
 /* #endregion RESET */
 
 /* #region TYPOGRAPHY */
@@ -29,6 +28,7 @@ body {
 }
 
 /* Tavolozza colori */
+
 :root {
     --blue: #0061ff;
     --light-blue: #1e73fc;
@@ -50,7 +50,7 @@ body {
 
 }
 
-/* /Tavolozza colori */
+/* Titoli ed elementi grafici */
 
 
 h1 {
@@ -64,6 +64,13 @@ h2 {
 
 h3 {
     font-size: 24px;
+}
+
+hr {
+    width: 50px;
+    height: 1px;
+    background-color: var(--border-gray);
+    border: none;
 }
 
 /* #endregion TYPOGRAPHY */
@@ -102,7 +109,6 @@ h3 {
 header a {
     text-decoration: none;
     color: black;
-
 }
 
 header li {
@@ -111,7 +117,6 @@ header li {
     display: flex;
     align-items: center;
 }
-
 
 nav .col-left,
 nav .col-right {
@@ -142,7 +147,6 @@ header li:hover {
 .plan-recap-list ul {
     flex-direction: column;
     gap: 22px;
-
 }
 
 .plan-features-list span,
@@ -195,7 +199,6 @@ header nav {
     z-index: 9999;
 }
 
-
 nav .col-right {
     justify-content: flex-end;
 }
@@ -205,7 +208,6 @@ nav .logo {
     justify-content: center;
 }
 
-
 nav .sign-up {
     padding: 0 20px;
 }
@@ -213,7 +215,6 @@ nav .sign-up {
 nav .btn {
     padding: 9px 17px;
 }
-
 
 .head-start-button:hover {
     border: none !important;
@@ -227,7 +228,6 @@ nav .btn {
     padding-top: 80px;
     position: relative;
     bottom: -80px;
-
 }
 
 .inside-jumbo {
@@ -239,7 +239,6 @@ nav .btn {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-
 }
 
 .inside-jumbo .col-left .fa-arrow-down {
@@ -269,7 +268,6 @@ main .plans {
     padding-top: 150px;
 }
 
-
 .select-plan {
     gap: 40px;
     font-size: 15px;
@@ -280,13 +278,11 @@ main .plans .grid {
     padding-top: 55px;
 }
 
-
 .plans-column {
     font-size: 14px;
     width: calc((100% - 100px) / 3);
     border: 1px solid var(--border-gray);
     min-height: 100%;
-
 }
 
 .plan-header {
@@ -313,17 +309,12 @@ main .plans .grid {
     margin-top: -11px;
 }
 
-
 .plan-features-list {
     padding: 33px 0;
 }
 
-hr {
+.plan-body hr {
     margin-top: 19px;
-    width: 50px;
-    height: 1px;
-    background-color: var(--border-gray);
-    border: none;
 }
 
 .plan-body {
@@ -345,7 +336,6 @@ hr {
 .plan-recap-list ul {
     margin-top: 33px;
     gap: 20px;
-
 }
 
 .plan-recap-list li {
@@ -378,7 +368,6 @@ hr {
 .plan.col-left .team-feature {
     padding-right: 20px;
     padding-top: 50px;
-
 }
 
 .plan.col-right {
@@ -546,7 +535,6 @@ hr {
     background-color: white;
     margin-top: 10px;
     margin-left: 4px;
-
 }
 
 .col-bottom .container-small .col-left {
@@ -559,9 +547,98 @@ hr {
 
 /* #endregion customers-reviews */
 
+/* #region faq */
+
+.faq {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.faq .section-title {
+    padding-bottom: 58px;
+}
+
+.faq hr {
+    width: 100%;
+}
+
+.faq .question-container {
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.faq .question {
+    padding: 20px 0;
+}
+
+.faq .fa-chevron-down {
+    font-size: 12px;
+    padding-right: 45px;
+}
+
+.faq .faq-answer {
+    display: none;
+    padding-bottom: 20px;
+}
+
+.question-container:hover .faq-answer {
+    display: block;
+}
+
+.question-container:hover .fa-chevron-down {
+    transform: scaleY(-1);
+}
+
+/* #endregion faq */
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .grid {
+    padding: 100px 0 113px;
+    justify-content: space-between;
+}
+
+.footer .grid .column {
+    width: calc(100% / 5);
+}
+
+footer .grid ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 29px
+}
+
+footer .grid ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer hr {
+    width: 120px;
+}
+
+footer .language-selection {
+    padding: 50px 0;
+    color: var(--gray)
+}
+
+footer .language-selection .current-language {
+    padding-left: 5px;
+}
+
+footer .language-selection .fa-caret-up {
+    vertical-align: middle;
+    color: var(--gray);
+}
 
 /* #endregion FOOTER */
 
@@ -571,17 +648,14 @@ hr {
 .monthly-plan .fa-circle-dot {
     cursor: pointer;
     padding-right: 5px;
-
 }
 
 .yearly-plan .fa-circle {
     color: var(--border-gray);
-
 }
 
 .monthly-plan .fa-circle-dot {
     color: var(--blue);
-
 }
 
 /* #endregion RADIO */
