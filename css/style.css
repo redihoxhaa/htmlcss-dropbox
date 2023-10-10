@@ -502,8 +502,9 @@ hr {
 
 .col-center .element.design-it {
     width: 100%;
-    min-height: 640px;
+    height: 640px;
     background-color: var(--design-it-center);
+    overflow-y: scroll;
 
 }
 
@@ -532,7 +533,7 @@ hr {
 .col-bottom {
     width: 100%;
     background-color: var(--hearst);
-    padding: 125px 464px;
+    padding: 125px 0;
 }
 
 .col-bottom h2 {
@@ -548,11 +549,11 @@ hr {
 
 }
 
-.customers-reviews .grid .col-bottom .col-left {
+.col-bottom .container-small .col-left {
     width: 70%;
 }
 
-.customers-reviews .grid .col-bottom .col-right {
+.col-bottom .container-small .col-right {
     text-align: end;
 }
 
