@@ -82,6 +82,10 @@ h3 {
     flex-wrap: wrap;
 }
 
+.container-huge {
+    width: 1920px;
+    margin: 0 auto;
+}
 
 .container-big {
     max-width: 1200px;
@@ -448,16 +452,13 @@ hr {
 }
 
 .customers-reviews .grid {
-    margin: 0 auto;
-    max-width: 1920px;
-
+    margin-top: 150px;
     gap: 0;
 }
 
 .customers-reviews .grid .element {
-    max-width: 320px;
-    min-width: 320px;
-    min-height: 320px;
+    width: 50%;
+    height: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -475,14 +476,85 @@ hr {
     background-color: var(--bordeaux);
 }
 
+.col-left .element.uf {
+    background-color: var(--uf);
+}
+
+.col-left .element.topps {
+    background-color: var(--topps);
+}
+
+.col-right .element.wbr {
+    background-color: var(--wbr);
+}
+
+.col-right .element.hearst {
+    background-color: var(--hearst);
+}
+
+.col-right .element.lp {
+    background-color: var(--lp);
+}
+
+.col-right .element.cco {
+    background-color: var(--cco);
+}
+
 .col-center .element.design-it {
-    max-width: 640px;
-    min-width: 640px;
+    width: 100%;
     min-height: 640px;
+    background-color: var(--design-it-center);
 
 }
 
+.col-center .element.design-it img {
+    width: 50%;
+}
 
+.grid .col-center .element.design-it {
+    padding: 50px;
+}
+
+.col-center hr {
+    width: 108px;
+    margin-top: 45px;
+}
+
+.col-center p {
+    margin-top: 42px;
+}
+
+.col-center span {
+    display: inline-block;
+    margin-top: 48px;
+}
+
+.col-bottom {
+    width: 100%;
+    background-color: var(--hearst);
+    padding: 125px 464px;
+}
+
+.col-bottom h2 {
+    color: var(--bordeaux);
+}
+
+.col-bottom .btn {
+    padding: 11px 50px;
+    color: black;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 4px;
+
+}
+
+.customers-reviews .grid .col-bottom .col-left {
+    width: 70%;
+}
+
+.customers-reviews .grid .col-bottom .col-right {
+    text-align: end;
+}
 
 /* #endregion customers-reviews */
 
