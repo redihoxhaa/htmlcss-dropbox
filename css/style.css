@@ -414,6 +414,22 @@ hr {
 
 /* #endregion multitask */
 
+/* #region customers-reviews */
+
+.customers-reviews {
+    margin-top: 195px;
+}
+
+.customers-reviews .container-small .box {
+    width: 70%;
+}
+
+.customers-reviews .call-to-action {
+    padding-top: 60px;
+}
+
+/* #endregion customers-reviews */
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
