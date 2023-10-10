@@ -38,6 +38,16 @@ body {
     --light-gray: #f5f5f5;
     --border-gray: #d0d0d3;
     --duration-gray: #66686b;
+    --design-it-secondary: #d1e9cd;
+    --design-it-primary: #a2d39b;
+    --uf: #0093ce;
+    --topps: #ff1c1c;
+    --design-it-center: #f5f5f5;
+    --wbr: #d5001f;
+    --hearst: #b4d0e7;
+    --lp: #0d2481;
+    --cco: #ffd830;
+
 }
 
 /* /Tavolozza colori */
@@ -117,6 +127,7 @@ header li:hover {
 
 /* Main common */
 
+/* Plans */
 
 .plans-column,
 .plan-body {
@@ -135,6 +146,14 @@ header li:hover {
     margin-top: -2px;
 }
 
+/* Customers-reviews */
+
+.customers-reviews .grid .col-left,
+.customers-reviews .grid .col-center,
+.customers-reviews .grid .col-right {
+    width: 640px;
+    flex-wrap: wrap;
+}
 
 /* Button common */
 
@@ -427,6 +446,43 @@ hr {
 .customers-reviews .call-to-action {
     padding-top: 60px;
 }
+
+.customers-reviews .grid {
+    margin: 0 auto;
+    max-width: 1920px;
+
+    gap: 0;
+}
+
+.customers-reviews .grid .element {
+    max-width: 320px;
+    min-width: 320px;
+    min-height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+
+.element img {
+    width: 47%;
+}
+
+.col-left .element.design-it {
+    background-color: var(--design-it-primary);
+    box-shadow: inset 0px 0px 0px 15px var(--design-it-secondary);
+}
+
+.col-left .element.asu {
+    background-color: var(--bordeaux);
+}
+
+.col-center .element.design-it {
+    max-width: 640px;
+    min-width: 640px;
+    min-height: 640px;
+
+}
+
+
 
 /* #endregion customers-reviews */
 
