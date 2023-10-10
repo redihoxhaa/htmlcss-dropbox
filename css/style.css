@@ -67,6 +67,11 @@ h3 {
     display: flex;
 }
 
+.grid {
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
 
 .container-big {
     max-width: 1200px;
@@ -248,11 +253,8 @@ main .plans {
     padding-top: 60px;
 }
 
-main .plans-grid {
+main .plans .grid {
     padding-top: 55px;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 
@@ -393,7 +395,22 @@ hr {
 
 /* #region multitask */
 
+.multitask {
+    margin-top: 156px;
+}
 
+.multitask .grid {
+    margin-top: 62px;
+}
+
+
+.multitask-element {
+    width: calc((100% - 100px) / 3);
+}
+
+.multitask-element p {
+    margin-top: 32px;
+}
 
 /* #endregion multitask */
 
