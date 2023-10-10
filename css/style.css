@@ -1,4 +1,4 @@
-/* #region RESET*/
+/* #region RESET */
 
 * {
     margin: 0;
@@ -20,9 +20,9 @@ a {
 }
 
 
-/* #endregion RESET*/
+/* #endregion RESET */
 
-/* #region TYPOGRAPHY*/
+/* #region TYPOGRAPHY */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -56,17 +56,17 @@ h3 {
     font-size: 24px;
 }
 
-/* #endregion TYPOGRAPHY*/
+/* #endregion TYPOGRAPHY */
 
-/* #region COMMON*/
+/* #region COMMON */
 
-.flex {
-    display: flex;
-}
+/* Utility */
 
+.flex,
 .row {
     display: flex;
 }
+
 
 .container-big {
     max-width: 1200px;
@@ -118,6 +118,17 @@ header li:hover {
     flex-direction: column;
 }
 
+.plan-features-list,
+.plan-recap-list ul {
+    flex-direction: column;
+    gap: 22px;
+
+}
+
+.plan-features-list span,
+.plan-recap-list li span {
+    margin-top: -2px;
+}
 
 
 /* Button common */
@@ -125,7 +136,7 @@ header li:hover {
 .btn {
     background-color: var(--blue);
     color: white;
-    padding: 9px 17px;
+    padding: 11px 17px;
     border: none;
     font-size: inherit;
     font-family: inherit;
@@ -136,9 +147,9 @@ header li:hover {
     background-color: var(--light-blue);
 }
 
-/* #endregion COMMON*/
+/* #endregion COMMON */
 
-/* #region HEADER*/
+/* #region HEADER */
 
 header {
     background-color: var(--sky);
@@ -171,12 +182,18 @@ nav .sign-up {
     padding: 0 20px;
 }
 
+nav .btn {
+    padding: 9px 17px;
+}
+
 
 .head-start-button:hover {
     border: none !important;
     padding-top: 0px;
 }
 
+
+/* Jumbotron */
 
 .jumbotron {
     padding-top: 80px;
@@ -214,9 +231,11 @@ nav .sign-up {
     padding: 11px 17px;
 }
 
-/* #endregion HEADER*/
+/* #endregion HEADER */
 
-/* #region MAIN*/
+/* #region MAIN */
+
+/* #region plans */
 
 main .plans {
     padding-top: 150px;
@@ -269,20 +288,9 @@ main .plans-grid {
     margin-top: -11px;
 }
 
-.plan-features-list,
-.plan-recap-list ul {
-    flex-direction: column;
-    gap: 22px;
-
-}
 
 .plan-features-list {
     padding: 33px 0;
-}
-
-.plan-features-list span,
-.plan-recap-list li span {
-    margin-top: -2px;
 }
 
 hr {
@@ -299,7 +307,6 @@ hr {
 
 .plan-body .btn {
     width: 100%;
-    padding: 11px 17px;
 }
 
 .plan-buy-now {
@@ -334,32 +341,69 @@ hr {
     flex-direction: row;
 }
 
-.plan-col-a {
+.plan.col-left {
     width: 74%;
     flex-direction: column;
 }
 
-.plan-col-a .plan-price {
+.plan.col-left .plan-price {
     margin-top: 15px;
 }
 
-.plan-col-a .team-feature {
+.plan.col-left .team-feature {
     padding-right: 20px;
     padding-top: 50px;
 
 }
 
-.plan-col-b {
+.plan.col-right {
     width: 27%;
 }
 
-/* #endregion MAIN*/
+/* #endregion plans */
 
-/* #region FOOTER*/
+/* #region find-a-partner */
 
-/* #endregion FOOTER*/
+.find-a-partner {
+    margin-top: 150px;
+}
 
-/* #region RADIO*/
+.find-a-partner .col-left {
+    width: 60%;
+}
+
+.find-a-partner .col-right {
+    width: 40%;
+    padding: 50px;
+}
+
+.find-a-partner .col-right p {
+    padding-top: 13px;
+}
+
+.find-a-partner .col-right .btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: max-content;
+    margin-top: 30px;
+}
+
+/* #endregion find-a-partner */
+
+/* #region multitask */
+
+
+
+/* #endregion multitask */
+
+/* #endregion MAIN */
+
+/* #region FOOTER */
+
+/* #endregion FOOTER */
+
+/* #region RADIO */
 
 .yearly-plan .fa-circle,
 .monthly-plan .fa-circle-dot {
@@ -378,4 +422,4 @@ hr {
 
 }
 
-/* #endregion RADIO*/
+/* #endregion RADIO */
