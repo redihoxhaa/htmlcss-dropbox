@@ -222,8 +222,11 @@ nav .btn {
     padding-top: 0px;
 }
 
+/* #endregion HEADER */
 
-/* Jumbotron */
+/* #region MAIN */
+
+/* #region JUMBOTRON */
 
 .jumbotron-section {
     background-color: var(--sky);
@@ -263,9 +266,7 @@ nav .btn {
     padding: 11px 17px;
 }
 
-/* #endregion HEADER */
-
-/* #region MAIN */
+/* #endregion JUMBOTRON */
 
 /* #region plans */
 
@@ -448,7 +449,6 @@ main .plans .grid {
 .customers-reviews .grid {
     margin-top: 150px;
     gap: 0;
-    flex-wrap: nowrap;
 }
 
 .customers-reviews .grid .element {
