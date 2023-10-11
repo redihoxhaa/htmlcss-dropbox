@@ -159,8 +159,8 @@ header li:hover {
 .customers-reviews .grid .col-left,
 .customers-reviews .grid .col-center,
 .customers-reviews .grid .col-right {
-    max-width: calc(100% / 3);
-    min-height: calc(100% / 2);
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
     flex-wrap: wrap;
 }
 
@@ -497,9 +497,9 @@ main .plans .grid {
 
 .col-center .element.design-it {
     width: 100%;
-    min-height: 640px;
+    height: 100%;
     background-color: var(--design-it-center);
-    overflow-y: scroll;
+    overflow: auto;
 
 }
 
