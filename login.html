@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+        function myPasswordf() {
+            var x = document.getElementById("myPassword");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Fonts -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
+
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- /Open Sans -->
+
+    <!-- /Import Fonts -->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- /Import CSS -->
+
+    <!-- Titolo scheda -->
+    <title>Dropbox</title>
+    <!-- /Titolo scheda -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/dropbox-favicon.ico">
+    <!-- Favicon -->
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Container navbar -->
+        <nav class="flex">
+            <!-- Colonna sinistra navbar -->
+            <div class="col-left flex">
+
+                <!-- Logo sito -->
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo-small.png" alt="Logo Dropbox"></a>
+                </div>
+                <!-- /Logo sito -->
+
+                <!-- Link alle info del servizio -->
+                <div class="info-links">
+                    <ul class="flex">
+                        <li><a href="#">Perché Dropbox</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                        <li><a href="#">Piani e Prezzi</a></li>
+                    </ul>
+                </div>
+                <!-- /Link alle info del servizio -->
+
+            </div>
+            <!-- /Colonna sinistra navbar -->
+
+            <!-- Colonna destra navbar -->
+            <div class="col-right flex">
+
+                <!-- Link al supporto del servizio -->
+                <div class="support-links">
+                    <ul class="flex">
+                        <li><a href="#">Supporto</a></li>
+                        <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    </ul>
+                </div>
+                <!-- /Link al supporto del servizio -->
+
+                <!-- Link e pulsante login -->
+                <div class="login flex">
+                    <ul class="flex">
+                        <li><a href="#" class="sign-up">Accedi</a></li>
+                        <li class="head-start-button"><button class="btn">Inizia</button></li>
+                    </ul>
+                </div>
+                <!-- /Link e pulsante login -->
+            </div>
+            <!-- /Colonna destra navbar -->
+        </nav>
+        <!-- /Container Navbar -->
+
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Sezione login -->
+        <section class="login-signup">
+            <!-- Contenitore dashboard -->
+            <div class="dashboard container-big flex">
+                <!-- Colonna sinistra dashboard -->
+                <div class="col-left flex">
+                    <!-- Contenitore immagine -->
+                    <div class="image-container">
+
+                        <!-- Immagine -->
+                        <img src="img/person-cheering.png" alt="Person cheering" class="illustration">
+                        <!-- /Immagine -->
+
+                        <!-- Bottone nascosto -->
+                        <button class="discount btn"><a href="https://bit.ly/3LzjJUI"
+                                target="blank">Complimenti!<br>Clicca per
+                                ricevere uno sconto del 50% sul
+                                primo
+                                mese!</a>
+                        </button>
+                        <!-- /Bottone nascosto -->
+
+                    </div>
+                    <!-- Contenitore immagine -->
+
+                    <!-- Link crea account -->
+                    <div><a href="#">Crea un account</a></div>
+                    <!-- /Link crea account -->
+
+                    <!-- Hint -->
+                    <div class="hint">Hint: prova a fare hover sull'immagine qui sopra per una sorpresa</div>
+                    <!-- /Hint -->
+
+                </div>
+                <!-- /Colonna sinistra dashboard -->
+
+                <!-- Separatore verticale -->
+                <hr>
+                <!-- /Separatore verticale -->
+
+                <!-- Colonna destra dashboard -->
+                <div class="col-right flex">
+
+                    <!-- Titolo -->
+                    <h2>Log In</h2>
+                    <!-- /Titolo -->
+
+                    <!-- Box input email -->
+                    <div class="input-email flex">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="example@example.com">
+                    </div>
+                    <!-- /Box input email -->
+
+                    <!-- Box input password -->
+                    <div class="input-password flex">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Password" id="myPassword">
+                        <i class="fa-solid fa-eye-slash" onclick="myPasswordf()"></i>
+                    </div>
+                    <!-- /Box input password -->
+
+                    <!-- Check ricordami -->
+                    <div class="remember-me flex">
+                        <input type="checkbox" name="" id=""> <span>Ricordami</span>
+                    </div>
+                    <!-- /Check ricordami -->
+
+                    <!-- Bottone login -->
+                    <div class="log-in btn">Log In</div>
+                    <!-- /Bottone login -->
+
+                    <!-- Sezione login alternativi -->
+                    <div class="alternative-login flex">
+                        <span>Oppure accedi con</span>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-apple"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <!-- Sezione login alternativi -->
+
+                </div>
+                <!-- /Colonna destra dashboard -->
+            </div>
+            <!-- /Contenitore -->
+
+        </section>
+        <!-- /Sezione login -->
+
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Contenitore footer -->
+        <div class="container-big">
+            <!-- Griglia colonne -->
+            <div class="grid flex">
+                <!-- Singola colonna -->
+                <div class="column">
+
+                    <!-- Titolo colonna -->
+                    <div class="title">
+                        <h3>Dropbox</h3>
+                    </div>
+                    <!-- /Titolo colonna -->
+
+                    <!-- Lista link -->
+                    <ul class="flex">
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="#">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                    </ul>
+                    <!-- /Lista link -->
+
+                </div>
+                <!-- /Singola colonna -->
+
+                <!-- Singola colonna -->
+                <div class="column">
+
+                    <!-- Titolo colonna -->
+                    <div class="title">
+                        <h3>Prodotti</h3>
+                    </div>
+                    <!-- /Titolo colonna -->
+
+                    <!-- Lista link -->
+                    <ul class="flex">
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="#">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                    </ul>
+                    <!-- /Lista link -->
+
+                </div>
+                <!-- /Singola colonna -->
+
+                <!-- Singola colonna -->
+                <div class="column">
+
+                    <!-- Titolo colonna -->
+                    <div class="title">
+                        <h3>Azienda</h3>
+                    </div>
+                    <!-- /Titolo colonna -->
+
+                    <!-- Lista link -->
+                    <ul class="flex">
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="#">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                    </ul>
+                    <!-- /Lista link -->
+
+                </div>
+                <!-- /Singola colonna -->
+
+                <!-- Singola colonna -->
+                <div class="column">
+
+                    <!-- Titolo colonna -->
+                    <div class="title">
+                        <h3>Supporto</h3>
+                    </div>
+                    <!-- /Titolo colonna -->
+
+                    <!-- Lista link -->
+                    <ul class="flex">
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="#">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                    </ul>
+                    <!-- /Lista link -->
+
+                </div>
+                <!-- /Singola colonna -->
+
+                <!-- Singola colonna -->
+                <div class="column">
+
+                    <!-- Titolo colonna -->
+                    <div class="title">
+                        <h3>Community</h3>
+                    </div>
+                    <!-- /Titolo colonna -->
+
+                    <!-- Lista link -->
+                    <ul class="flex">
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="#">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                    </ul>
+                    <!-- /Lista link -->
+                </div>
+                <!-- /Singola colonna -->
+            </div>
+            <!-- /Griglia colonne -->
+
+            <!-- Separatore -->
+            <hr>
+            <!-- /Separatore -->
+
+            <!-- Selezione lingua -->
+            <div class="language-selection">
+                <i class="fa-solid fa-earth-americas"></i>
+
+                <!-- Lingua corrente -->
+                <span class="current-language">Italiano</span>
+                <!-- Lingua corrente -->
+
+                <a href=""><i class="fa-solid fa-caret-up"></i></a>
+            </div>
+            <!-- /Selezione lingua -->
+
+        </div>
+        <!-- /Contenitore footer -->
+
+    </footer>
+    <!-- /Footer -->
+
+</body>
+
+</html>

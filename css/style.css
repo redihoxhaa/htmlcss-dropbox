@@ -226,7 +226,7 @@ nav .btn {
 
 /* #region MAIN */
 
-/* #region JUMBOTRON */
+/* #region jumbotron */
 
 .jumbotron-section {
     background-color: var(--sky);
@@ -266,7 +266,7 @@ nav .btn {
     padding: 11px 17px;
 }
 
-/* #endregion JUMBOTRON */
+/* #endregion jumbotron */
 
 /* #region plans */
 
@@ -666,3 +666,207 @@ footer .language-selection .fa-caret-up {
 }
 
 /* #endregion RADIO */
+
+/* #region LOGIN */
+
+/* Common */
+
+.dashboard .col-left,
+.dashboard .col-right {
+    padding: 50px;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .col-right .input-email input,
+.dashboard .col-right .input-password input {
+    border: none;
+    width: 100%;
+    padding-bottom: 5px;
+    outline: none;
+    font: inherit;
+}
+
+.dashboard .input-email,
+.dashboard .input-password {
+    width: 100%;
+    padding: 6px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.dashboard .fa-user,
+.dashboard .fa-key,
+.dashboard .fa-eye-slash {
+    padding-bottom: 5px;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid var(--border-gray);
+    border-radius: 15px;
+}
+
+.login-signup {
+    padding: 180px 30px;
+    min-height: calc(100vh - 568px);
+}
+
+/* Colonna sinistra */
+
+.dashboard .col-left .image-container {
+    width: 70%;
+    position: relative;
+}
+
+.dashboard .col-left .btn {
+    background-color: gold;
+    color: black;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 0 10px gold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    filter: blur(20px);
+    transition: opacity 1s, filter 0.3s;
+}
+
+.image-container .illustration {
+    transition: filter 1s;
+}
+
+.dashboard .col-left .image-container:hover .btn {
+    opacity: 1;
+    filter: blur(0px);
+    animation: rotation 1s ease-in-out infinite;
+}
+
+.dashboard .col-left .image-container:hover .illustration {
+    filter: blur(20px);
+}
+
+.dashboard .hint {
+    color: var(--border-gray);
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.dashboard .col-left a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Separatore */
+
+.dashboard hr {
+    width: 1px;
+    height: 400px;
+    align-self: center;
+}
+
+/* Colonna destra */
+
+.dashboard .col-right {
+    padding: 50px 100px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.dashboard .col-right h2 {
+    padding-bottom: 20px;
+}
+
+.dashboard .fa-key {
+    padding-right: 15px;
+}
+
+.dashboard .fa-user {
+    padding-right: 17px;
+}
+
+.dashboard .fa-eye-slash {
+    text-align: end;
+    cursor: pointer;
+}
+
+.dashboard .fa-eye-slash:hover {
+    color: var(--blue);
+    animation: eye-rotation 1s ease-in-out infinite;
+}
+
+.dashboard .col-right .remember-me {
+    padding-top: 15px;
+    padding-left: 6px;
+}
+
+.dashboard .col-right .remember-me span {
+    padding-left: 16px;
+}
+
+.dashboard .col-right .log-in {
+    padding: 11px 35px;
+    margin-top: 15px;
+}
+
+.alternative-login {
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.alternative-login span {
+    color: gray;
+}
+
+.alternative-login i {
+    font-size: 20px;
+}
+
+/* #endregion LOGIN */
+
+/* #region ANIMATIONS */
+
+
+@keyframes rotation {
+    0% {
+        transform: translate(-50%, -50%) rotate(2deg)
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-2deg)
+    }
+
+
+    100% {
+        transform: translate(-50%, -50%) rotate(2deg)
+    }
+}
+
+@keyframes eye-rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(10deg)
+    }
+
+    75% {
+        transform: rotate(-10deg)
+    }
+
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+/* #endregion ANIMATIONS */
