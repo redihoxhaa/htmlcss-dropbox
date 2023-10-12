@@ -706,21 +706,20 @@ footer .language-selection .fa-caret-up {
 /* Dashboard */
 
 .login-signup {
-    padding: 180px 30px;
+    padding: 180px 30px 100px;
     min-height: calc(100vh - 568px);
+    align-items: center;
     /*Sottrarre all'altezza del contenitore l'altezza del footer*/
     position: relative;
 }
 
 .dashboard {
     width: 100%;
+    height: calc(50%)%;
     font-size: 14px;
     border: 1px solid var(--border-gray);
     border-radius: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, calc(-50% + 40px));
+
     /*Sottrarre all'asse Y la metà dell'altezza dell'header fisso*/
 
 }
