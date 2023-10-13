@@ -715,13 +715,11 @@ footer .language-selection .fa-caret-up {
 
 .dashboard {
     width: 100%;
-    height: calc(50%)%;
+    height: 50%;
     font-size: 14px;
     border: 1px solid var(--border-gray);
     border-radius: 15px;
-
     /*Sottrarre all'asse Y la metà dell'altezza dell'header fisso*/
-
 }
 
 /* Colonna sinistra */
